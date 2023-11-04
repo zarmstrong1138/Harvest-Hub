@@ -1,3 +1,25 @@
-body {
-    background-image: url(Harvest-Hub\images\splash-background.png)
+#app {
+    width: 393px;
+    height: 852px;
+    margin: 0 auto;
+    background: url("images/splash-background.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center center;
+    position: relative;
+}
+
+.wrapper {
+    background-color: transparent;
+    margin: auto;
+    width: 393px;
+    position: absolute;
+    top: 25%;
+    justify-content: center;
+    display: inline-flex;
+}
+
+.logo {
+    z-index: 1;
+    background-color: transparent;
 }
