@@ -1,4 +1,15 @@
+body {
+    width: 393px;
+    height: 852px;
+    margin: 0 auto;
+    background: url("images/splash-background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
 #app {
+    display: flex;
     width: 393px;
     height: 852px;
     margin: 0 auto;
@@ -15,7 +26,7 @@
     position: absolute;
     top: 25%;
     justify-content: center;
-    display: inline-flex;
+    display: grid;
 }
 
 .logo-link {
@@ -28,8 +39,98 @@ p {
     width: 261px;
     text-align: center;
     align-items: center;
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'calt' off;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.18px;
 }
-button {
+ .eater button {
     background-color: #6E9233;
-    border-radius: 16   ;
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16%;
+    color: var(--wf-base-white, #FFF);
+    font-feature-settings: 'calt' off;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.18px;
+    border: none;
+    box-shadow: 4px 4px 8px gray;
+}
+
+.welcome-screen {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 150px;
+    gap: 64px;
+}
+.welcome {
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'calt' off;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.18px;
+    align-self: center;
+    justify-content: center;
+}
+
+.eater {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.grower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.grower button {
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16%;
+    color: var(--wf-base-white, #FFF);
+    font-feature-settings: 'calt' off;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.18px;
+    border: none;
+    box-shadow: 4px 4px 8px gray;
+    background-color: #483331;
+}
+
+.grower button:hover {
+    background-color: #5e4542;
+    cursor: pointer;
+}
+
+.eater button:hover {
+    background-color: #83ad40;
+    cursor: pointer;
 }
