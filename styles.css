@@ -4,7 +4,6 @@
     margin: 0 auto;
     background: url("images/splash-background.png");
     background-repeat: no-repeat;
-    /* background-size: cover; */
     background-position: center center;
     position: relative;
 }
@@ -19,7 +18,18 @@
     display: inline-flex;
 }
 
-.logo {
+.logo-link {
     z-index: 1;
     background-color: transparent;
+}
+
+p {
+    display: grid;
+    width: 261px;
+    text-align: center;
+    align-items: center;
+}
+button {
+    background-color: #6E9233;
+    border-radius: 16   ;
 }
